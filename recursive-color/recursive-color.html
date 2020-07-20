@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="recursive color">
+    <meta name="description" content="ex6">
+    <meta name="author" content="Meng-Chu Chang">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursive Color</title>
+    <style>
+      body {
+        background-color: #A0A0A0;
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+      }
+      .level1 {
+        padding: 8px;
+        background-color: #FF0000;
+      }
+      .level2 {
+        padding: 8px;
+        background-color: #0000FF;
+      }
+      .level3 {
+        padding: 8px;
+        background-color: #00FF00;
+      }
+      #inner {
+        padding: 8px;
+        margin: 10px 50px;
+        border: 1px dashed #000;
+        background-color: #DDD;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="level1">
+      <div class="level2">
+        <div class="level3">
+          <div class="level1">
+            <div class="level2">
+              <div class="level3">
+                <div class="level1">
+                  <div class="level2">
+                    <div class="level3">
+                      <div class="level1">
+                        <div class="level2">
+                          <div class="level3">
+                            <div class="level1">
+                              <div class="level2">
+                                <div class="level3">
+                                  <div class="level1">
+                                    <div class="level2">
+                                      <div class="level3">
+                                        <div id="inner"></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
