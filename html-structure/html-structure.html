@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="html structure">
+    <meta name="description" content="ex7">
+    <meta name="author" content="Meng-Chu Chang">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Structure</title>
+    <style>
+      body {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 20px;
+      }
+      #html_block {
+        background-color: rgb(255, 215, 222);
+        margin: 10px 20px 10px 20px;
+        border: 1px solid #000;
+      }
+      .level1 {
+        background-color: rgb(206, 206, 206);
+        margin: 10px 20px 10px 20px;
+        border: 1px solid #000;
+      }
+      .level2 {
+        background-color: rgb(240, 240, 240);
+        margin: 10px 20px 10px 20px;
+        border: 1px solid #000;
+      }
+      #css_margin {
+        background-color: rgb(240, 240, 240);
+        margin: 10px 20px 10px 20px;
+        border: 2px dashed rgb(210, 210, 210);
+        text-align: center;
+      }
+      #css_border {
+        background-color: rgb(27, 182, 27);
+        margin: 5px 20px 10px 20px;
+        text-align: center;
+        padding: 10px;
+      }
+      #css_padding {
+        background-color: rgb(240, 240, 240);
+        margin: 5px 20px 10px 20px;
+        text-align: center;
+        padding: 10px;
+      }
+      #css_content {
+        background-color: white;
+        margin: 5px 20px 10px 20px;
+        border: 2px dashed rgb(210, 210, 210);
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="html_block">
+      &lthtml&gt
+        <div class="level1">
+          &lthead&gt
+            <div class="level2">&lttitle&gtPage title&lt/title&gt</div>
+          &lt/head&gt
+        </div>
+        <div class="level1">
+          &ltbody&gt
+            <div class="level2">
+              <div class="level2">&lth1&gtThis is a heading.&lt/h1&gt</div>
+              <div class="level2">&ltp&gtThis is a paragraph.&lt/p&gt</div>
+            </div>
+            <div>
+              <br>
+              <span style="margin: 20px;">CSS BOX MODEL</span>
+              <div id="css_margin">
+                Margin
+                <div id="css_border">
+                  Border
+                  <div id="css_padding">
+                    Padding
+                    <div id="css_content">
+                      Content
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          &lt/body&gt
+        </div>
+      &lt/html&gt
+    </div>
+  </body>
+
+</html>
