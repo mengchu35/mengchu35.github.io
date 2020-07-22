@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="form">
+    <meta name="description" content="ex11">
+    <meta name="author" content="Meng-Chu Chang">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Type</title>
+    <style>
+      body {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        letter-spacing: 2px;
+        background-color: rgba(255, 234, 238, 0.767);
+        margin: 20px 50px 20px 50px;
+      }
+      h1 {
+        text-align: center;
+        border: 1px dashed black;
+        padding: 8px;
+      }
+      h3 {
+        width: 400px;
+        padding: 8px;
+        background-color: rgba(255, 255, 0, 0.349);
+      }
+      textarea {
+        width:300px;
+        height: 200px;
+      }
+      fieldset {
+        margin: 30px 0px 30px 0px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <h1>My Questions ?</h1>
+    </div>
+
+    <div>
+      <form autocomplete="off">
+        <fieldset>
+          <legend><b>Personal Information</b></legend>
+          <ol>
+            <li>
+              <h3>What's your name and email?</h3>
+              <label for="name"></label>
+              <input type="text" id="name" name="name" placeholder="Input your name"><br><br>
+              <label for="email"></label>
+              <input type="email" id="email" name="email" placeholder="Input your email"><br>
+            </li>
+            <li>
+              <h3>What's your gender?</h3>
+              <input type="radio" id="male" name="gender" value="male">
+              <label for="male">Male</label><br>
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="female">Female</label><br>
+              <input type="radio" id="other" name="gender" value="other">
+              <label for="other">Other</label><br>
+            </li>
+            <li>
+              <h3>What's your age?</h3>
+              <select id="age" name="age">
+                <option value="0-10">0 ~ 10</option>
+                <option value="11-20">11 ~ 20</option>
+                <option value="21-30">21 ~ 30</option>
+                <option value="31-40">31 ~ 40</option>
+                <option value="41-50">41 ~ 50</option>
+              </select>
+            </li>
+          </ol>
+        </fieldset>
+        <fieldset>
+          <legend><b>Other Question</b></legend>
+          <ol>
+            <li>
+              <h3>How do you get around?</h3>
+              <input type="checkbox" id="MRT" name="traffic" value="MRT">
+              <label for="MRT">MRT</label><br>
+              <input type="checkbox" id="bus" name="traffic" value="bus">
+              <label for="bus">Bus</label><br>
+              <input type="checkbox" id="bike" name="traffic" value="bike">
+              <label for="bike">Bike</label><br>
+              <input type="checkbox" id="feet" name="traffic" value="feet">
+              <label for="feet">Feet</label><br>
+            </li>
+            <li>
+              <h3>What's your favorite color?</h3>
+              <input type="color" id="favcolor" name="favcolor"><br>
+            </li>
+            <li>
+              <h3>Write something about you?</h3>
+              <textarea name="message"></textarea>
+            </li>
+          </ol>
+        </fieldset>
+        <input type="submit" value="Submit" style="float: right;">
+      </form>
+    </div>
+  </body>
+
+</html>
