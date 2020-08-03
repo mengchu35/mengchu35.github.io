@@ -9,3 +9,5 @@
 
 ## HTML ##
 * HTML Tutorial: https://www.w3schools.com/html/default.asp
+* CSS Tutorial: https://www.w3schools.com/css/default.asp
+* Icons: https://fontawesome.com/icons?d=gallery&m=free
