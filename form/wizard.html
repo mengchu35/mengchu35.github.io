@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="grid, form">
+    <meta name="description" content="css:ex8">
+    <meta name="author" content="Meng-Chu Chang">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizard</title>
+    <link rel="stylesheet" href="./static/fontawesome/css/all.css">
+    <style>
+      body{
+        font-family: "Microsoft JhengHei";
+        color: rgb(201, 201, 201);
+      }
+
+      #container {
+        display: grid;
+        grid-template-columns: repeat(6, 150px);
+        grid-template-rows: repeat(9, 60px);
+        width: 900px;
+        height: 540px;
+        margin: 50px auto;
+        position: relative;
+      }
+
+      #item_1 { grid-area: 1 / 1 / 3 / 2; }
+      #item_2 { grid-area: 1 / 2 / 2 / 5; }
+      #item_3 { grid-area: 1 / 5 / 4 / 7; }
+      #item_11 { grid-area: 4 / 1 / 5 / 4; }
+      #item_12 { grid-area: 4 / 4 / 5 / 7; }
+      #item_13 { grid-area: 5 / 1 / 6 / 4; }
+      #item_14 { grid-area: 5 / 4 / 6 / 7; }
+      #item_15 { grid-area: 6 / 1 / 7 / 4; }
+      #item_16 { grid-area: 6 / 4 / 7 / 7; }
+      #item_17 { grid-area: 7 / 1 / 8 / 7; }
+      #item_18 { grid-area: 8 / 1 / 9 / 7; }
+      #item_19 { grid-area: 9 / 1 / 10 / 7; }
+
+      .number {
+        position: relative;
+      }
+
+      #item_1 span {
+        font-size: 80px;
+        color: red;
+        border-bottom: 2px solid red;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      .number span {
+        width: 100px;
+        color: rgb(201, 201, 201);
+        border-bottom: 2px solid rgb(201, 201, 201);
+        font-size: 40px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      .title p {
+        font-size: 15px;
+      }
+
+      label {
+        font-size: 12px;
+      }
+
+      input[type=text] {
+        margin: 8px 0;
+        border: 0;
+        border-bottom: 1px solid rgb(201, 201, 201);
+      }
+
+      #name, #company, #cellphone, #phone {
+        width: 350px;
+      }
+
+      #city, #address, #id {
+        width: 600px;
+      }
+
+      input[type=text]:focus {
+        border: 0;
+        border-bottom: 2px solid red;
+        outline: none;
+      }
+
+      input[type=text]::-webkit-input-placeholder {
+        font-family: "Microsoft JhengHei";
+        color: rgb(201, 201, 201);
+      }
+
+      input[type=submit] {
+        font-family: "Microsoft JhengHei";
+        width: 200px;
+        height: 40px;
+        color: white;
+        background-color: red;
+        border: 0;
+        border-radius: 20px;
+        position: absolute;
+        bottom: -50px;
+        right: 100px;
+        z-index: 1;
+      }
+
+      .fa-arrow-right {
+        color: white;
+        position: absolute;
+        bottom: -40px;
+        right: 120px;
+        z-index: 2;
+      }
+
+      input[type=submit]:hover {
+        background-color: rgba(255, 0, 0, 0.5);
+      }
+
+      input[type=submit]:focus {
+        outline: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form autocomplete="off">
+      <div id="container">
+        <div id="item_1" class="number">
+          <span>01</span>
+        </div>
+        <div id="item_2"></div>
+        <div id="item_3"></div>
+        <div class="number">
+          <span>02</span>
+        </div>
+        <div class="number">
+          <span>03</span>
+        </div>
+        <div class="number">
+          <span>04</span>
+        </div>
+        <div class="title">
+          <p style="color: red;">寄件人信息</p>
+        </div>
+        <div class="title">
+          <p>收件人信息</p>
+        </div>
+        <div class="title">
+          <p>預約信息</p>
+        </div>
+        <div class="title">
+          <p>完成下單</p>
+        </div>
+
+        <div id="item_11">
+          <p><span style="color: black;">寄方信息</span> <span style="font-size: small;">標 * 為必填項</span></p>
+        </div>
+        <div id="item_12"></div>
+        <div id="item_13">
+          <label for="name"><span style="color: red;">* </span>姓名</label><br>
+          <input type="text" id="name" name="name" placeholder="請填寫聯繫人姓名" required>
+        </div>
+        <div id="item_14">
+          <label for="company">公司名稱</label><br>
+          <input type="text" id="company" name="company" placeholder="請填寫公司名稱">
+        </div>
+        <div id="item_15">
+          <label for="cellphone">手機號碼</label><br>
+          <input type="text" id="cellphone" name="cellphone" placeholder="請填寫手機號碼">
+        </div>
+        <div id="item_16">
+          <label for="phone">市話電話</label><br>
+          <input type="text" id="phone" name="phone" placeholder="請填寫市話電話號碼">
+        </div>
+        <div id="item_17">
+          <label for="city"><span style="color: red;">* </span>縣市區</label><br>
+          <input type="text" id="city" name="city" placeholder="請選擇所在區域，例如: 臺北市-大同區" list="city_list" required>
+          <datalist id="city_list">
+            <option value="臺北市-中正區">
+            <option value="臺北市-大同區">
+            <option value="臺北市-中山區">
+            <option value="臺北市-松山區">
+            <option value="臺北市-大安區">
+            <option value="臺北市-萬華區">
+            <option value="臺北市-信義區">
+            <option value="臺北市-士林區">
+            <option value="臺北市-北投區">
+            <option value="臺北市-內湖區">
+            <option value="臺北市-南港區">
+            <option value="臺北市-文山區">
+          </datalist>
+        </div>
+        <div id="item_18">
+          <label for="address"><span style="color: red;">* </span>詳細地址</label><br>
+          <input type="text" id="address" name="address" placeholder="請填寫所在街道以及詳細地址" required>
+        </div>
+        <div id="item_19">
+          <label for="id">統一編號或身分證字號</label><br>
+          <input type="text" id="id" name="id" placeholder="公司請填寫統一編號，個人請填寫身分證字號">
+        </div>
+        <input type="submit" value="下一步">
+        <i class="fas fa-arrow-right"></i>
+      </div>
+    </form>
+  </body>
+
+</html>
