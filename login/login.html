@@ -1,0 +1,266 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="grid, form, login">
+    <meta name="description" content="css:ex7">
+    <meta name="author" content="Meng-Chu Chang">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="./static/fontawesome/css/all.css">
+    <style>
+      body {
+        font-family: Sofia;
+        background:rgba(187, 241, 248, 0.26) url("./static/images/IMG20190716101820.jpg") center center fixed no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: repeat(6, 50px);
+        width: 400px;
+        height: 300px;
+        margin: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        border-radius: 8px;
+      }
+
+      .container div {
+        font-size: 20px;
+      }
+
+      .sign_in {
+        color: black;
+        background-color: white;
+        border-bottom: 3px solid rgb(3, 45, 184);
+        border-radius: 8px 0 0 0;
+      }
+
+      .register {
+        color: gray;
+        background-color: rgb(238, 238, 238);
+        border-bottom: 3px solid rgb(238, 238, 238);
+        border-radius: 0 8px 0 0;
+      }
+
+      .sign_in, .register {
+        position: relative;
+      }
+
+      .sign_in b, .register b {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .register:hover {
+        color: black;
+        border-bottom: 3px solid rgb(182, 182, 182);
+      }
+
+      .content {
+        grid-area: 2 / 1 / 7 / 3;
+        color: gray;
+        background-color: white;
+        border-radius: 0 0 8px 8px;
+      }
+
+      form {
+        width: 80%;
+        margin: 15px auto;
+      }
+
+      .user, .password {
+        width: 100%;
+        height: 60px;
+        position: relative;
+        display: inline-block;
+        margin: 0 0 10px 0;
+      }
+
+      i {
+        position: absolute;
+        bottom: 6px;
+        right: 0;
+      }
+
+      label input {
+        position: absolute;
+        z-index: 1;
+      }
+
+      label i {
+        position: absolute;
+        z-index: 2;
+      }
+
+      input[type=text]:hover, input[type="password"]:hover {
+        border: 1px solid lightblue;
+      }
+
+      input[type=text], input[type="password"] {
+        width: 100%;
+        height: 25px;
+        border: 1px solid #e5e5e5;
+        border-radius: 2px;
+      }
+
+      label {
+        font-size: small;
+      }
+
+      .tooltip {
+        position: relative;
+        display: inline-block;
+      }
+
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 105%;
+      }
+
+      .tooltip .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 100%;
+        margin-top: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent black transparent transparent;
+      }
+
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+      }
+
+      .content_2 {
+        position: relative;
+      }
+
+      input[type=checkbox] {
+        visibility: hidden;
+        font-size: 12px;
+        cursor: pointer;
+      }
+
+      input[type=checkbox]:after {
+        content: "";
+        display: inline-block;
+        width: 12px;
+        height: 16px;
+        padding-left: 3px;
+        visibility: visible;
+        color: royalblue;
+        border: 1px solid #e5e5e5;
+        border-radius: 2px;
+      }
+
+      input[type=checkbox]:checked:after {
+        content: "\2713";
+        font-weight: bold;
+      }
+
+      label[for=checkbox]:hover {
+        cursor: pointer;
+      }
+
+      #hint {
+        font-size: small;
+        position: absolute;
+        bottom: 2px;
+        right: 0;
+        cursor: pointer;
+      }
+
+      a {
+        color: royalblue;
+        text-decoration: none;
+      }
+
+      a span:hover {
+        text-decoration: underline;
+      }
+
+      input[type=submit] {
+        font-family: Sofia;
+        width: 100%;
+        padding: 7px;
+        margin: 10px 0 0 0;
+        color: white;
+        background-color: rgba(5, 153, 5, 0.795);
+        border: 0;
+        border-radius: 3px;
+      }
+
+      input[type=submit]:hover {
+        background-color: rgba(5, 153, 5, 0.5);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="sign_in">
+        <b>Sign in</b>
+      </div>
+
+      <div class="register">
+        <b>Register</b>
+      </div>
+
+      <div class="content">
+        <form>
+          <div>
+            <div class="user tooltip">
+              <label for="user">
+                Username or email<br>
+                <input type="text" id="user" name="user">
+                <span class="tooltiptext">input username</span>
+                <i class="fas fa-user"></i>
+              </label>
+            </div>
+            <div class="password tooltip">
+              <label for="password">
+                Password<br>
+                <input type="password" id="password" name="password">
+                <span class="tooltiptext">input password</span>
+                <i class="fas fa-lock"></i>
+              </label>
+            </div>
+          </div>
+
+          <div class="content_2">
+            <input type="checkbox" id="checkbox" name="checkbox">
+            <label for="checkbox">Remember me</label>
+            <a>
+              <span id="hint">Forgot your password?</span>
+            </a>
+          </div>
+
+          <div>
+            <input type="submit" value="Sign in">
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+
+</html>
