@@ -102,7 +102,7 @@
         z-index: 2;
       }
 
-      input[type=text]:hover, input[type="password"]:hover{
+      input[type=text]:hover, input[type="password"]:hover {
         border: 1px solid lightblue;
       }
 
@@ -178,6 +178,10 @@
         font-weight: bold;
       }
 
+      label[for=checkbox]:hover {
+        cursor: pointer;
+      }
+
       #hint {
         font-size: small;
         position: absolute;
@@ -244,8 +248,8 @@
           </div>
 
           <div class="content_2">
-            <input type="checkbox" class="checkbox">
-            <label class="checkbox">Remember me</label>
+            <input type="checkbox" id="checkbox" name="checkbox">
+            <label for="checkbox">Remember me</label>
             <a>
               <span id="hint">Forgot your password?</span>
             </a>
