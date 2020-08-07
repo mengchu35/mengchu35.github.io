@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.css">
+    <title>Breadcrumb</title>
+    <style>
+      body {
+        margin: 30px;
+      }
+
+      #title {
+        border-bottom: 3px double red;
+      }
+
+      .group_title {
+        background-color: lightgoldenrodyellow;
+      }
+
+      .sub_title {
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+      .showcase {
+        border: 2px solid #efefef;
+        padding: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1><b id="title">Breadcrumb<b></h1>
+
+    <h3 class="sub_title"><b class="group_title">Example<b></h3>
+    <div class="showcase">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
+      </nav>
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Library</li>
+        </ol>
+      </nav>
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+    </div>
+  </body>
+
+</html>

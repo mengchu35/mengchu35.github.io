@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.css">
+    <title>Popovers</title>
+    <style>
+      body {
+        margin: 30px;
+      }
+
+      #title {
+        border-bottom: 3px double red;
+      }
+
+      .group_title {
+        background-color: lightgoldenrodyellow;
+      }
+
+      .sub_title {
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+      .showcase {
+        border: 2px solid #efefef;
+        padding: 20px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <h1><b id="title">Popovers<b></h1>
+
+    <h3 class="sub_title"><b class="group_title">Example<b></h3>
+    <div class="showcase">
+      <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title"
+        data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+    </div>
+
+    <h4 class="sub_title"><b>Four directions</b></h4>
+    <div class="showcase">
+      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top"
+        data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+        Popover on top
+      </button>
+
+      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right"
+        data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+        Popover on right
+      </button>
+
+      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom"
+        data-content="Vivamus
+      sagittis lacus vel augue laoreet rutrum faucibus.">
+        Popover on bottom
+      </button>
+
+      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left"
+        data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+        Popover on left
+      </button>
+    </div>
+
+    <h4 class="sub_title"><b>Dismiss on next click</b></h4>
+    <div class="showcase">
+      <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus"
+        title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible
+        popover</a>
+    </div>
+
+    <h4 class="sub_title"><b>Disabled elements</b></h4>
+    <div class="showcase">
+      <span class="d-inline-block" data-toggle="popover" data-content="Disabled popover">
+        <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled>Disabled button</button>
+      </span>
+    </div>
+    <script src="./bootstrap/dist/js/jquery.min.js"></script>
+    <script src="./bootstrap/dist/js/popper.min.js"></script>
+    <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="popover"]').popover()
+      })
+
+      $('.popover-dismiss').popover({
+        trigger: 'focus'
+      })
+    </script>
+  </body>
+
+</html>

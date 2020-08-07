@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.css">
+    <title>Tooltips</title>
+    <style>
+      body {
+        margin: 30px;
+      }
+
+      #title {
+        border-bottom: 3px double red;
+      }
+
+      .group_title {
+        background-color: lightgoldenrodyellow;
+      }
+
+      .sub_title {
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+      .showcase {
+        border: 2px solid #efefef;
+        padding: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1><b id="title">Tooltips<b></h1>
+
+    <h3 class="sub_title"><b class="group_title">Example<b></h3>
+    <div class="showcase">
+      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+        Tooltip on top
+      </button>
+      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+        Tooltip on right
+      </button>
+      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+        Tooltip on bottom
+      </button>
+      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+        Tooltip on left
+      </button>
+      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true"
+        title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+        Tooltip with HTML
+      </button>
+    </div>
+
+    <h3 class="sub_title"><b class="group_title">Usage<b></h3>
+    <h4 class="sub_title"><b>Disabled elements</b></h4>
+    <div class="showcase">
+      <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Disabled tooltip">
+        <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled>Disabled button</button>
+      </span>
+    </div>
+    <script src="./bootstrap/dist/js/jquery.min.js"></script>
+    <script src="./bootstrap/dist/js/popper.min.js"></script>
+    <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+  </body>
+
+</html>
