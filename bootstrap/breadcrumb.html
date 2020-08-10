@@ -5,12 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="./static/bootstrap/dist/css/bootstrap.css">
-    <title>Breadcrumb</title>
+    <title>Bootstrap</title>
     <style>
-      body {
-        margin: 30px;
-      }
-
       #title {
         border-bottom: 3px double red;
       }
@@ -32,30 +28,69 @@
   </head>
 
   <body>
-    <h1><b id="title">Breadcrumb<b></h1>
+    <nav class="navbar navbar-dark bg-dark mb-3">
+      <a class="navbar-brand" href="./bootstrap.html">Showcase</a>
+    </nav>
 
-    <h3 class="sub_title"><b class="group_title">Example<b></h3>
-    <div class="showcase">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item active" aria-current="page">Home</li>
-        </ol>
-      </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2">
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="./bootstrap.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="./alerts.html">Alerts</a></li>
+            <li class="nav-item"><a class="nav-link" href="./badge.html">Badge</a></li>
+            <li class="nav-item"><a class="nav-link active" href="./breadcrumb.html">Breadcrumb</a></li>
+            <li class="nav-item"><a class="nav-link" href="./buttons.html">Buttons</a></li>
+            <li class="nav-item"><a class="nav-link" href="./button-group.html">Button group</a></li>
+            <li class="nav-item"><a class="nav-link" href="./cards.html">Cards</a></li>
+            <li class="nav-item"><a class="nav-link" href="./carousel.html">Carousel</a></li>
+            <li class="nav-item"><a class="nav-link" href="./collapse.html">Collapse</a></li>
+            <li class="nav-item"><a class="nav-link" href="./dropdowns.html">Dropdowns</a></li>
+            <li class="nav-item"><a class="nav-link" href="./forms.html">Forms</a></li>
+            <li class="nav-item"><a class="nav-link" href="./input-group.html">Input group</a></li>
+            <li class="nav-item"><a class="nav-link" href="./jumbotron.html">Jumbotron</a></li>
+            <li class="nav-item"><a class="nav-link" href="./list-group.html">List group</a></li>
+            <li class="nav-item"><a class="nav-link" href="./media-object.html">Media object</a></li>
+            <li class="nav-item"><a class="nav-link" href="./modal.html">Modal</a></li>
+            <li class="nav-item"><a class="nav-link" href="./navs.html">Navs</a></li>
+            <li class="nav-item"><a class="nav-link" href="./navbar.html">Navbar</a></li>
+            <li class="nav-item"><a class="nav-link" href="./pagination.html">Pagination</a></li>
+            <li class="nav-item"><a class="nav-link" href="./popovers.html">Popovers</a></li>
+            <li class="nav-item"><a class="nav-link" href="./progress.html">Progress</a></li>
+            <li class="nav-item"><a class="nav-link" href="./scrollspy.html">Scrollspy</a></li>
+            <li class="nav-item"><a class="nav-link" href="./spinners.html">Spinners</a></li>
+            <li class="nav-item"><a class="nav-link" href="./toasts.html">Toasts</a></li>
+            <li class="nav-item"><a class="nav-link" href="./tooltips.html">Tooltips</a></li>
+          </ul>
+        </div>
+        <div class="col-10">
+          <h1><b id="title">Breadcrumb<b></h1>
 
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Library</li>
-        </ol>
-      </nav>
+          <h3 class="sub_title"><b class="group_title">Example<b></h3>
+          <div class="showcase">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Home</li>
+              </ol>
+            </nav>
 
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item"><a href="#">Library</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Data</li>
-        </ol>
-      </nav>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Library</li>
+              </ol>
+            </nav>
+
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Library</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Data</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 

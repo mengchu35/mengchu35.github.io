@@ -4,110 +4,145 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap</title>
     <link rel="stylesheet" href="./static/bootstrap/dist/css/bootstrap.css">
-    <title>Alerts</title>
     <style>
-      body {
-        margin: 30px;
-      }
-
       #title {
-        border-bottom: 3px double red;
+      border-bottom: 3px double red;
       }
 
       .group_title {
-        background-color: lightgoldenrodyellow;
+      background-color: lightgoldenrodyellow;
       }
 
       .sub_title {
-        margin-top: 20px;
-        margin-bottom: 10px;
+      margin-top: 20px;
+      margin-bottom: 10px;
       }
 
       .showcase {
-        border: 2px solid #efefef;
-        padding: 20px;
+      border: 2px solid #efefef;
+      padding: 20px;
       }
     </style>
   </head>
 
   <body>
-    <h1><b id="title">Alerts<b></h1>
+    <nav class="navbar navbar-dark bg-dark mb-3">
+      <a class="navbar-brand" href="./bootstrap.html">Showcase</a>
+    </nav>
 
-    <h3 class="sub_title"><b class="group_title">Example<b></h3>
-    <div class="showcase">
-      <div class="alert alert-primary" role="alert">
-        A simple primary alert—check it out!
-      </div>
-      <div class="alert alert-secondary" role="alert">
-        A simple secondary alert—check it out!
-      </div>
-      <div class="alert alert-success" role="alert">
-        A simple success alert—check it out!
-      </div>
-      <div class="alert alert-danger" role="alert">
-        A simple danger alert—check it out!
-      </div>
-      <div class="alert alert-warning" role="alert">
-        A simple warning alert—check it out!
-      </div>
-      <div class="alert alert-info" role="alert">
-        A simple info alert—check it out!
-      </div>
-      <div class="alert alert-light" role="alert">
-        A simple light alert—check it out!
-      </div>
-      <div class="alert alert-dark" role="alert">
-        A simple dark alert—check it out!
-      </div>
-    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2">
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="./bootstrap.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="./alerts.html">Alerts</a></li>
+            <li class="nav-item"><a class="nav-link" href="./badge.html">Badge</a></li>
+            <li class="nav-item"><a class="nav-link" href="./breadcrumb.html">Breadcrumb</a></li>
+            <li class="nav-item"><a class="nav-link" href="./buttons.html">Buttons</a></li>
+            <li class="nav-item"><a class="nav-link" href="./button-group.html">Button group</a></li>
+            <li class="nav-item"><a class="nav-link" href="./cards.html">Cards</a></li>
+            <li class="nav-item"><a class="nav-link" href="./carousel.html">Carousel</a></li>
+            <li class="nav-item"><a class="nav-link" href="./collapse.html">Collapse</a></li>
+            <li class="nav-item"><a class="nav-link" href="./dropdowns.html">Dropdowns</a></li>
+            <li class="nav-item"><a class="nav-link" href="./forms.html">Forms</a></li>
+            <li class="nav-item"><a class="nav-link" href="./input-group.html">Input group</a></li>
+            <li class="nav-item"><a class="nav-link" href="./jumbotron.html">Jumbotron</a></li>
+            <li class="nav-item"><a class="nav-link" href="./list-group.html">List group</a></li>
+            <li class="nav-item"><a class="nav-link" href="./media-object.html">Media object</a></li>
+            <li class="nav-item"><a class="nav-link" href="./modal.html">Modal</a></li>
+            <li class="nav-item"><a class="nav-link" href="./navs.html">Navs</a></li>
+            <li class="nav-item"><a class="nav-link" href="./navbar.html">Navbar</a></li>
+            <li class="nav-item"><a class="nav-link" href="./pagination.html">Pagination</a></li>
+            <li class="nav-item"><a class="nav-link" href="./popovers.html">Popovers</a></li>
+            <li class="nav-item"><a class="nav-link" href="./progress.html">Progress</a></li>
+            <li class="nav-item"><a class="nav-link" href="./scrollspy.html">Scrollspy</a></li>
+            <li class="nav-item"><a class="nav-link" href="./spinners.html">Spinners</a></li>
+            <li class="nav-item"><a class="nav-link" href="./toasts.html">Toasts</a></li>
+            <li class="nav-item"><a class="nav-link" href="./tooltips.html">Tooltips</a></li>
+          </ul>
+        </div>
+        <div class="col-10">
+          <h1><b id="title">Alerts<b></h1>
 
-    <h4 class="sub_title"><b>Link color</b></h4>
-    <div class="showcase">
-      <div class="alert alert-primary" role="alert">
-        A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-      </div>
-      <div class="alert alert-secondary" role="alert">
-        A simple secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-      </div>
-      <div class="alert alert-success" role="alert">
-        A simple success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-      </div>
-      <div class="alert alert-danger" role="alert">
-        A simple danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-      </div>
-      <div class="alert alert-warning" role="alert">
-        A simple warning alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-      </div>
-      <div class="alert alert-info" role="alert">
-        A simple info alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-      </div>
-      <div class="alert alert-light" role="alert">
-        A simple light alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-      </div>
-      <div class="alert alert-dark" role="alert">
-        A simple dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-      </div>
-    </div>
+          <h3 class="sub_title"><b class="group_title">Example<b></h3>
+          <div class="showcase">
+            <div class="alert alert-primary" role="alert">
+              A simple primary alert—check it out!
+            </div>
+            <div class="alert alert-secondary" role="alert">
+              A simple secondary alert—check it out!
+            </div>
+            <div class="alert alert-success" role="alert">
+              A simple success alert—check it out!
+            </div>
+            <div class="alert alert-danger" role="alert">
+              A simple danger alert—check it out!
+            </div>
+            <div class="alert alert-warning" role="alert">
+              A simple warning alert—check it out!
+            </div>
+            <div class="alert alert-info" role="alert">
+              A simple info alert—check it out!
+            </div>
+            <div class="alert alert-light" role="alert">
+              A simple light alert—check it out!
+            </div>
+            <div class="alert alert-dark" role="alert">
+              A simple dark alert—check it out!
+            </div>
+          </div>
 
-    <h4 class="sub_title"><b>Additional content</b></h4>
-    <div class="showcase">
-      <div class="alert alert-success" role="alert">
-        <h4 class="alert-heading">Well done!</h4>
-        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so
-          that you can see how spacing within an alert works with this kind of content.</p>
-        <hr>
-        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
-      </div>
-    </div>
+          <h4 class="sub_title"><b>Link color</b></h4>
+          <div class="showcase">
+            <div class="alert alert-primary" role="alert">
+              A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+            </div>
+            <div class="alert alert-secondary" role="alert">
+              A simple secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+            </div>
+            <div class="alert alert-success" role="alert">
+              A simple success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+            </div>
+            <div class="alert alert-danger" role="alert">
+              A simple danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+            </div>
+            <div class="alert alert-warning" role="alert">
+              A simple warning alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+            </div>
+            <div class="alert alert-info" role="alert">
+              A simple info alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+            </div>
+            <div class="alert alert-light" role="alert">
+              A simple light alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+            </div>
+            <div class="alert alert-dark" role="alert">
+              A simple dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+            </div>
+          </div>
 
-    <h4 class="sub_title"><b>Dismissing</b></h4>
-    <div class="showcase">
-      <div class="alert alert-warning alert-dismissible fade show" role="alert">
-        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+          <h4 class="sub_title"><b>Additional content</b></h4>
+          <div class="showcase">
+            <div class="alert alert-success" role="alert">
+              <h4 class="alert-heading">Well done!</h4>
+              <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so
+                that you can see how spacing within an alert works with this kind of content.</p>
+              <hr>
+              <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+            </div>
+          </div>
+
+          <h4 class="sub_title"><b>Dismissing</b></h4>
+          <div class="showcase">
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+              <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

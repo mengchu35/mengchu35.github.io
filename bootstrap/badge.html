@@ -5,12 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="./static/bootstrap/dist/css/bootstrap.css">
-    <title>Badge</title>
+    <title>Bootstrap</title>
     <style>
-      body {
-        margin: 30px;
-      }
-
       #title {
         border-bottom: 3px double red;
       }
@@ -32,56 +28,95 @@
   </head>
 
   <body>
-    <h1><b id="title">Badge<b></h1>
+    <nav class="navbar navbar-dark bg-dark mb-3">
+      <a class="navbar-brand" href="./bootstrap.html">Showcase</a>
+    </nav>
 
-    <h3 class="sub_title"><b class="group_title">Example<b></h3>
-    <div class="showcase">
-      <h1>Example heading <span class="badge badge-secondary">New</span></h1>
-      <h2>Example heading <span class="badge badge-secondary">New</span></h2>
-      <h3>Example heading <span class="badge badge-secondary">New</span></h3>
-      <h4>Example heading <span class="badge badge-secondary">New</span></h4>
-      <h5>Example heading <span class="badge badge-secondary">New</span></h5>
-      <h6>Example heading <span class="badge badge-secondary">New</span></h6>
-      <br>
-      <button type="button" class="btn btn-primary">
-        Notifications <span class="badge badge-light">4</span>
-      </button>
-    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2">
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="./bootstrap.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="./alerts.html">Alerts</a></li>
+            <li class="nav-item"><a class="nav-link active" href="./badge.html">Badge</a></li>
+            <li class="nav-item"><a class="nav-link" href="./breadcrumb.html">Breadcrumb</a></li>
+            <li class="nav-item"><a class="nav-link" href="./buttons.html">Buttons</a></li>
+            <li class="nav-item"><a class="nav-link" href="./button-group.html">Button group</a></li>
+            <li class="nav-item"><a class="nav-link" href="./cards.html">Cards</a></li>
+            <li class="nav-item"><a class="nav-link" href="./carousel.html">Carousel</a></li>
+            <li class="nav-item"><a class="nav-link" href="./collapse.html">Collapse</a></li>
+            <li class="nav-item"><a class="nav-link" href="./dropdowns.html">Dropdowns</a></li>
+            <li class="nav-item"><a class="nav-link" href="./forms.html">Forms</a></li>
+            <li class="nav-item"><a class="nav-link" href="./input-group.html">Input group</a></li>
+            <li class="nav-item"><a class="nav-link" href="./jumbotron.html">Jumbotron</a></li>
+            <li class="nav-item"><a class="nav-link" href="./list-group.html">List group</a></li>
+            <li class="nav-item"><a class="nav-link" href="./media-object.html">Media object</a></li>
+            <li class="nav-item"><a class="nav-link" href="./modal.html">Modal</a></li>
+            <li class="nav-item"><a class="nav-link" href="./navs.html">Navs</a></li>
+            <li class="nav-item"><a class="nav-link" href="./navbar.html">Navbar</a></li>
+            <li class="nav-item"><a class="nav-link" href="./pagination.html">Pagination</a></li>
+            <li class="nav-item"><a class="nav-link" href="./popovers.html">Popovers</a></li>
+            <li class="nav-item"><a class="nav-link" href="./progress.html">Progress</a></li>
+            <li class="nav-item"><a class="nav-link" href="./scrollspy.html">Scrollspy</a></li>
+            <li class="nav-item"><a class="nav-link" href="./spinners.html">Spinners</a></li>
+            <li class="nav-item"><a class="nav-link" href="./toasts.html">Toasts</a></li>
+            <li class="nav-item"><a class="nav-link" href="./tooltips.html">Tooltips</a></li>
+          </ul>
+        </div>
+        <div class="col-10">
+          <h1><b id="title">Badge<b></h1>
 
-    <h3 class="sub_title"><b class="group_title">Contextual variations<b></h3>
-    <div class="showcase">
-      <span class="badge badge-primary">Primary</span>
-      <span class="badge badge-secondary">Secondary</span>
-      <span class="badge badge-success">Success</span>
-      <span class="badge badge-danger">Danger</span>
-      <span class="badge badge-warning">Warning</span>
-      <span class="badge badge-info">Info</span>
-      <span class="badge badge-light">Light</span>
-      <span class="badge badge-dark">Dark</span>
-    </div>
+          <h3 class="sub_title"><b class="group_title">Example<b></h3>
+          <div class="showcase">
+            <h1>Example heading <span class="badge badge-secondary">New</span></h1>
+            <h2>Example heading <span class="badge badge-secondary">New</span></h2>
+            <h3>Example heading <span class="badge badge-secondary">New</span></h3>
+            <h4>Example heading <span class="badge badge-secondary">New</span></h4>
+            <h5>Example heading <span class="badge badge-secondary">New</span></h5>
+            <h6>Example heading <span class="badge badge-secondary">New</span></h6>
+            <br>
+            <button type="button" class="btn btn-primary">
+              Notifications <span class="badge badge-light">4</span>
+            </button>
+          </div>
 
-    <h3 class="sub_title"><b class="group_title">Pill badges<b></h3>
-    <div class="showcase">
-      <span class="badge badge-pill badge-primary">Primary</span>
-      <span class="badge badge-pill badge-secondary">Secondary</span>
-      <span class="badge badge-pill badge-success">Success</span>
-      <span class="badge badge-pill badge-danger">Danger</span>
-      <span class="badge badge-pill badge-warning">Warning</span>
-      <span class="badge badge-pill badge-info">Info</span>
-      <span class="badge badge-pill badge-light">Light</span>
-      <span class="badge badge-pill badge-dark">Dark</span>
-    </div>
+          <h3 class="sub_title"><b class="group_title">Contextual variations<b></h3>
+          <div class="showcase">
+            <span class="badge badge-primary">Primary</span>
+            <span class="badge badge-secondary">Secondary</span>
+            <span class="badge badge-success">Success</span>
+            <span class="badge badge-danger">Danger</span>
+            <span class="badge badge-warning">Warning</span>
+            <span class="badge badge-info">Info</span>
+            <span class="badge badge-light">Light</span>
+            <span class="badge badge-dark">Dark</span>
+          </div>
 
-    <h3 class="sub_title"><b class="group_title">Links<b></h3>
-    <div class="showcase">
-      <a href="#" class="badge badge-primary">Primary</a>
-      <a href="#" class="badge badge-secondary">Secondary</a>
-      <a href="#" class="badge badge-success">Success</a>
-      <a href="#" class="badge badge-danger">Danger</a>
-      <a href="#" class="badge badge-warning">Warning</a>
-      <a href="#" class="badge badge-info">Info</a>
-      <a href="#" class="badge badge-light">Light</a>
-      <a href="#" class="badge badge-dark">Dark</a>
+          <h3 class="sub_title"><b class="group_title">Pill badges<b></h3>
+          <div class="showcase">
+            <span class="badge badge-pill badge-primary">Primary</span>
+            <span class="badge badge-pill badge-secondary">Secondary</span>
+            <span class="badge badge-pill badge-success">Success</span>
+            <span class="badge badge-pill badge-danger">Danger</span>
+            <span class="badge badge-pill badge-warning">Warning</span>
+            <span class="badge badge-pill badge-info">Info</span>
+            <span class="badge badge-pill badge-light">Light</span>
+            <span class="badge badge-pill badge-dark">Dark</span>
+          </div>
+
+          <h3 class="sub_title"><b class="group_title">Links<b></h3>
+          <div class="showcase">
+            <a href="#" class="badge badge-primary">Primary</a>
+            <a href="#" class="badge badge-secondary">Secondary</a>
+            <a href="#" class="badge badge-success">Success</a>
+            <a href="#" class="badge badge-danger">Danger</a>
+            <a href="#" class="badge badge-warning">Warning</a>
+            <a href="#" class="badge badge-info">Info</a>
+            <a href="#" class="badge badge-light">Light</a>
+            <a href="#" class="badge badge-dark">Dark</a>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 
