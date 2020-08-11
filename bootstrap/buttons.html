@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./static/bootstrap/dist/css/bootstrap.css">
+    <title>Bootstrap</title>
+    <style>
+      #title {
+        border-bottom: 3px double red;
+      }
+
+      .group_title {
+        background-color: lightgoldenrodyellow;
+      }
+
+      .sub_title {
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+      .showcase {
+        border: 2px solid #efefef;
+        padding: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark bg-dark mb-3">
+      <a class="navbar-brand" href="./bootstrap.html">Showcase</a>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2">
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="./bootstrap.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="./alerts.html">Alerts</a></li>
+            <li class="nav-item"><a class="nav-link" href="./badge.html">Badge</a></li>
+            <li class="nav-item"><a class="nav-link" href="./breadcrumb.html">Breadcrumb</a></li>
+            <li class="nav-item"><a class="nav-link" href="./buttons.html">Buttons</a></li>
+            <li class="nav-item"><a class="nav-link" href="./button-group.html">Button group</a></li>
+            <li class="nav-item"><a class="nav-link" href="./cards.html">Cards</a></li>
+            <li class="nav-item"><a class="nav-link" href="./carousel.html">Carousel</a></li>
+            <li class="nav-item"><a class="nav-link" href="./collapse.html">Collapse</a></li>
+            <li class="nav-item"><a class="nav-link" href="./dropdowns.html">Dropdowns</a></li>
+            <li class="nav-item"><a class="nav-link" href="./forms.html">Forms</a></li>
+            <li class="nav-item"><a class="nav-link" href="./input-group.html">Input group</a></li>
+            <li class="nav-item"><a class="nav-link" href="./jumbotron.html">Jumbotron</a></li>
+            <li class="nav-item"><a class="nav-link" href="./list-group.html">List group</a></li>
+            <li class="nav-item"><a class="nav-link" href="./media-object.html">Media object</a></li>
+            <li class="nav-item"><a class="nav-link" href="./modal.html">Modal</a></li>
+            <li class="nav-item"><a class="nav-link" href="./navs.html">Navs</a></li>
+            <li class="nav-item"><a class="nav-link" href="./navbar.html">Navbar</a></li>
+            <li class="nav-item"><a class="nav-link" href="./pagination.html">Pagination</a></li>
+            <li class="nav-item"><a class="nav-link" href="./popovers.html">Popovers</a></li>
+            <li class="nav-item"><a class="nav-link" href="./progress.html">Progress</a></li>
+            <li class="nav-item"><a class="nav-link" href="./scrollspy.html">Scrollspy</a></li>
+            <li class="nav-item"><a class="nav-link" href="./spinners.html">Spinners</a></li>
+            <li class="nav-item"><a class="nav-link" href="./toasts.html">Toasts</a></li>
+            <li class="nav-item"><a class="nav-link" href="./tooltips.html">Tooltips</a></li>
+          </ul>
+        </div>
+        <div class="col-10">
+          <h1><b id="title">Buttons<b></h1>
+
+          <h3 class="sub_title"><b class="group_title">Example<b></h3>
+          <div class="showcase">
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-light">Light</button>
+            <button type="button" class="btn btn-dark">Dark</button>
+            <button type="button" class="btn btn-link">Link</button>
+          </div>
+
+          <h3 class="sub_title"><b class="group_title">Button tags<b></h3>
+          <div class="showcase">
+            <a class="btn btn-primary" href="#" role="button">Link</a>
+            <button class="btn btn-primary" type="submit">Button</button>
+            <input class="btn btn-primary" type="button" value="Input">
+            <input class="btn btn-primary" type="submit" value="Submit">
+            <input class="btn btn-primary" type="reset" value="Reset">
+          </div>
+
+          <h3 class="sub_title"><b class="group_title">Outline buttons<b></h3>
+          <div class="showcase">
+            <button type="button" class="btn btn-outline-primary">Primary</button>
+            <button type="button" class="btn btn-outline-secondary">Secondary</button>
+            <button type="button" class="btn btn-outline-success">Success</button>
+            <button type="button" class="btn btn-outline-danger">Danger</button>
+            <button type="button" class="btn btn-outline-warning">Warning</button>
+            <button type="button" class="btn btn-outline-info">Info</button>
+            <button type="button" class="btn btn-outline-light">Light</button>
+            <button type="button" class="btn btn-outline-dark">Dark</button>
+          </div>
+
+          <h3 class="sub_title"><b class="group_title">Sizes<b></h3>
+          <div class="showcase">
+            <button type="button" class="btn btn-primary btn-lg">Large button</button>
+            <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+            <br><br>
+            <button type="button" class="btn btn-primary btn-sm">Small button</button>
+            <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+            <br><br>
+            <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+            <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+          </div>
+
+          <h3 class="sub_title"><b class="group_title">Active state<b></h3>
+          <div class="showcase">
+            <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
+            <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
+          </div>
+
+          <h3 class="sub_title"><b class="group_title">Disabled state<b></h3>
+          <div class="showcase">
+            <button type="button" class="btn btn-lg btn-primary" disabled>Primary button</button>
+            <button type="button" class="btn btn-secondary btn-lg" disabled>Button</button>
+            <br><br>
+            <a href="#" class="btn btn-primary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
+            <a href="#" class="btn btn-secondary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Link</a>
+          </div>
+
+          <h3 class="sub_title"><b class="group_title">Button plugin<b></h3>
+          <h4 class="sub_title"><b>Toggle states</b></h4>
+          <div class="showcase">
+            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+              Single toggle
+            </button>
+          </div>
+
+          <h4 class="sub_title"><b>Checkbox and radio buttons</b></h4>
+          <div class="showcase">
+            <div class="btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary active">
+                <input type="checkbox" checked> Checked
+              </label>
+            </div>
+            <br>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary active">
+                <input type="radio" name="options" id="option1" checked> Active
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option2"> Radio
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option3"> Radio
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./static/bootstrap/dist/js/jquery.min.js"></script>
+    <script src="./static/bootstrap/dist/js/popper.min.js"></script>
+    <script src="./static/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+
+</html>

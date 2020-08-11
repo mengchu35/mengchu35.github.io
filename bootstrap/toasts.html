@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./static/bootstrap/dist/css/bootstrap.css">
+    <title>Bootstrap</title>
+    <style>
+      #title {
+        border-bottom: 3px double red;
+      }
+
+      .group_title {
+        background-color: lightgoldenrodyellow;
+      }
+
+      .sub_title {
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+      .showcase {
+        border: 2px solid #efefef;
+        padding: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark bg-dark mb-3">
+      <a class="navbar-brand" href="./bootstrap.html">Showcase</a>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2">
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="./bootstrap.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="./alerts.html">Alerts</a></li>
+            <li class="nav-item"><a class="nav-link" href="./badge.html">Badge</a></li>
+            <li class="nav-item"><a class="nav-link" href="./breadcrumb.html">Breadcrumb</a></li>
+            <li class="nav-item"><a class="nav-link" href="./buttons.html">Buttons</a></li>
+            <li class="nav-item"><a class="nav-link" href="./button-group.html">Button group</a></li>
+            <li class="nav-item"><a class="nav-link" href="./cards.html">Cards</a></li>
+            <li class="nav-item"><a class="nav-link" href="./carousel.html">Carousel</a></li>
+            <li class="nav-item"><a class="nav-link" href="./collapse.html">Collapse</a></li>
+            <li class="nav-item"><a class="nav-link" href="./dropdowns.html">Dropdowns</a></li>
+            <li class="nav-item"><a class="nav-link" href="./forms.html">Forms</a></li>
+            <li class="nav-item"><a class="nav-link" href="./input-group.html">Input group</a></li>
+            <li class="nav-item"><a class="nav-link" href="./jumbotron.html">Jumbotron</a></li>
+            <li class="nav-item"><a class="nav-link" href="./list-group.html">List group</a></li>
+            <li class="nav-item"><a class="nav-link" href="./media-object.html">Media object</a></li>
+            <li class="nav-item"><a class="nav-link" href="./modal.html">Modal</a></li>
+            <li class="nav-item"><a class="nav-link" href="./navs.html">Navs</a></li>
+            <li class="nav-item"><a class="nav-link" href="./navbar.html">Navbar</a></li>
+            <li class="nav-item"><a class="nav-link" href="./pagination.html">Pagination</a></li>
+            <li class="nav-item"><a class="nav-link" href="./popovers.html">Popovers</a></li>
+            <li class="nav-item"><a class="nav-link" href="./progress.html">Progress</a></li>
+            <li class="nav-item"><a class="nav-link" href="./scrollspy.html">Scrollspy</a></li>
+            <li class="nav-item"><a class="nav-link" href="./spinners.html">Spinners</a></li>
+            <li class="nav-item"><a class="nav-link" href="./toasts.html">Toasts</a></li>
+            <li class="nav-item"><a class="nav-link" href="./tooltips.html">Tooltips</a></li>
+          </ul>
+        </div>
+        <div class="col-10">
+          <h1><b id="title">Toasts<b></h1>
+
+          <h3 class="sub_title"><b class="group_title">Example<b></h3>
+          <h4 class="sub_title"><b>Basic</b></h4>
+          <div class="showcase">
+            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="false">
+              <div class="toast-header">
+                <img src="./static/images/snoopy2.jpg" class="rounded mr-2" alt="image" style="width: 64px;height: 64px;">
+                <strong class="mr-auto">Bootstrap</strong>
+                <small>11 mins ago</small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="toast-body">
+                Hello, world! This is a toast message.
+              </div>
+            </div>
+          </div>
+
+          <h4 class="sub_title"><b>Translucent</b></h4>
+          <div class="showcase">
+            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="false">
+              <div class="toast-header">
+                <img src="./static/images/snoopy2.jpg" class="rounded mr-2" alt="image" style="width: 64px;height: 64px;">
+                <strong class="mr-auto">Bootstrap</strong>
+                <small class="text-muted">11 mins ago</small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="toast-body">
+                Hello, world! This is a toast message.
+              </div>
+            </div>
+          </div>
+
+          <h4 class="sub_title"><b>Stacking</b></h4>
+          <div class="showcase">
+            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="false">
+              <div class="toast-header">
+                <img src="./static/images/snoopy2.jpg" class="rounded mr-2" alt="image" style="width: 64px;height: 64px;">
+                <strong class="mr-auto">Bootstrap</strong>
+                <small class="text-muted">just now</small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="toast-body">
+                See? Just like this.
+              </div>
+            </div>
+
+            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="false">
+              <div class="toast-header">
+                <img src="./static/images/snoopy2.jpg" class="rounded mr-2" alt="image" style="width: 64px;height: 64px;">
+                <strong class="mr-auto">Bootstrap</strong>
+                <small class="text-muted">2 seconds ago</small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="toast-body">
+                Heads up, toasts will stack automatically
+              </div>
+            </div>
+          </div>
+
+          <h3 class="sub_title"><b class="group_title">Placement<b></h3>
+          <div class="showcase">
+            <div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;">
+              <div class="toast" style="position: absolute; top: 0; right: 0;" data-autohide="false">
+                <div class="toast-header">
+                  <img src="./static/images/snoopy2.jpg" class="rounded mr-2" alt="image" style="width: 64px;height: 64px;">
+                  <strong class="mr-auto">Bootstrap</strong>
+                  <small>11 mins ago</small>
+                  <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="toast-body">
+                  Hello, world! This is a toast message.
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="showcase">
+            <div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;">
+              <!-- Position it -->
+              <div style="position: absolute; top: 0; right: 0;">
+
+                <!-- Then put toasts within -->
+                <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="false">
+                  <div class="toast-header">
+                    <img src="./static/images/snoopy2.jpg" class="rounded mr-2" alt="image" style="width: 64px;height: 64px;">
+                    <strong class="mr-auto">Bootstrap</strong>
+                    <small class="text-muted">just now</small>
+                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="toast-body">
+                    See? Just like this.
+                  </div>
+                </div>
+
+                <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="false">
+                  <div class="toast-header">
+                    <img src="./static/images/snoopy2.jpg" class="rounded mr-2" alt="image" style="width: 64px;height: 64px;">
+                    <strong class="mr-auto">Bootstrap</strong>
+                    <small class="text-muted">2 seconds ago</small>
+                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="toast-body">
+                    Heads up, toasts will stack automatically
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="showcase">
+            <!-- Flexbox container for aligning the toasts -->
+            <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center"
+              style="height: 200px;">
+
+              <!-- Then put toasts within -->
+              <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="false">
+                <div class="toast-header">
+                  <img src="./static/images/snoopy2.jpg" class="rounded mr-2" alt="image" style="width: 64px;height: 64px;">
+                  <strong class="mr-auto">Bootstrap</strong>
+                  <small>11 mins ago</small>
+                  <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="toast-body">
+                  Hello, world! This is a toast message.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./static/bootstrap/dist/js/jquery.min.js"></script>
+    <script src="./static/bootstrap/dist/js/popper.min.js"></script>
+    <script src="./static/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      $(function () {
+        $('.toast').toast('show');
+      });
+    </script>
+  </body>
+
+</html>
